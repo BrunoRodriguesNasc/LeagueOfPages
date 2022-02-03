@@ -2,7 +2,7 @@
 $primary-color: #ececef;
 .image__header {
     position: relative;
-    background-image: url('./kaysa.jpeg');
+    background-image: url('../../assets//kaysa.jpeg');
     height: 750px;
     object-fit: cover;
     background-position: inherit;
@@ -41,6 +41,7 @@ $primary-color: #ececef;
     color: $primary-color;
     margin: 10px 0;
     letter-spacing: 0.25rem;
+    font-weight: 600;
     
 }
 

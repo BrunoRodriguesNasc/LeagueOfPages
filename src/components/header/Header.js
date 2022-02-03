@@ -1,14 +1,14 @@
 import React from 'react';
 import Image from '../Image/Image';
 import './header.scss'
-const Header = ({ logo, menu, blog }) => {
+
+const Header = ({ menu, blog }) => {
     return (
         <>
         <nav className='header'>
-            <div>
-                {logo}
+            <div className='header__logo'>
             </div>
-            <div>
+            <div className='header__menu'>
                 {menu}
             </div>
             <div>

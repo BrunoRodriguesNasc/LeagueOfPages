@@ -3,7 +3,7 @@ import React from 'react';
 const Button = ({ label, bgColor, color, width, height, fontSize, }) => {
 
  const classButton = {
-     background: `linear-gradient(180deg, white, ${bgColor}, ${bgColor}, ${bgColor}, ${bgColor})`,
+     background: `linear-gradient(359deg, ${bgColor} 90%,white)`,
      color,
      width,
      height,
