@@ -1,0 +1,30 @@
+.champions {
+    height: 500px;
+    background: #0d0d0d;
+    position: relative;
+}
+
+.champions h1 {
+    text-align: center;
+    color: #ececef;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+}
+
+.champions h1 span {
+    color: #08ecf7;
+}
+
+.champions div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    margin-top: 30px;
+}
+
+.boxChampions {
+    width: 30%;
+    margin: 0 5px;
+    height: 350px;
+    background-color: red;
+}
