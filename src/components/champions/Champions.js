@@ -7,11 +7,8 @@ const Champions = () => {
   return (
     <div className='champions'>
       <h1>Choose Your <span>Champion</span></h1>
-      <div>
-        <BoxChampions />
-        <BoxChampions />
-        <BoxChampions />
-        <BoxChampions />
+      <div className='champions__container'>
+       {champions.map(({name,image,detail}) => <BoxChampions image={image} name={name} detail={detail}/>)}
       </div>
     </div>
   );
