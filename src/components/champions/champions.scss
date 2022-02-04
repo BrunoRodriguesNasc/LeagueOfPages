@@ -74,12 +74,12 @@
 
 .boxChampions:hover .boxChampions__image {
     transform: translate(0, -30px);
-    transition: .5s ease;
+    transition: 1s ease;
 }
 
 .boxChampions:hover {
     background-color: #242625;
-    transition: .5s ease;
+    transition: 1s ease;
 }
 
 .boxChampions:hover  .boxChampions__infomartion::after {
@@ -89,7 +89,7 @@
 .boxChampions:hover  .boxChampions__infomartion {
     color: #12bab9;
     transform: translate(0, 0px);
-    transition: .5s;
+    transition: 1s;
 }
 
 @keyframes fade-in {
