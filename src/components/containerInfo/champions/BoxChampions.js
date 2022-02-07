@@ -12,8 +12,7 @@ function BoxChampions({ image, detail, name }) {
     margin: 'auto',
     objectFit:'cover',
     transition: '0.5s ease'
-
-  }
+  };
 
   return (
     <div className='boxChampions'>

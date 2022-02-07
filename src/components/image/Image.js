@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from '../button/Button';
-
 import './image.scss';
 
 function Image() {

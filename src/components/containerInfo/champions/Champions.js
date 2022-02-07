@@ -1,6 +1,6 @@
 import React from 'react';
 import BoxChampions from './BoxChampions';
-import { champions } from '../../utils';
+import { champions } from '../../../utils';
 import './champions.scss'
 
 const Champions = () => {
