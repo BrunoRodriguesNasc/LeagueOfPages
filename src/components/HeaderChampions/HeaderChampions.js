@@ -4,10 +4,9 @@ import './headerChampions.scss';
 const HeaderChampions = () => {
     return <div className='header__champions'>
         <h1 className='header__champions__header'>
-            <p>ESCOLHA SEU</p>
-            <span>CAMPEÃO</span>
-            <p className='header__champions__header__message'>Com mais de 140 Campeões, você encontrará a combinação perfeita para seu estilo de jogo.
-                Especialize-se em um estilo ou em todos.</p>
+            <p>CHOOSE YOURS</p>
+            <span>CHAMPION</span>
+            <p className='header__champions__header__message'>With over 140 champions, you'll find the perfect match for your playstyle. Specialize in one style or all.</p>
         </h1>
     </div>;
 }
