@@ -16,7 +16,7 @@ const Button = ({ label, bgColor, color, width, height, fontSize, }) => {
      marginTop:'30px'
  }
 
-  return <button classname="button" style={classButton}>{label}</button>;
+  return <button className="button" style={classButton}>{label}</button>;
 }
 
 export default Button;

@@ -33,9 +33,7 @@ $primary-color: #ececef;
     transform: rotate(-3deg);
 }
 
-
-.header:after
-{
+.header:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
   -o-transform: rotate(3deg);
@@ -56,9 +54,13 @@ $primary-color: #ececef;
   align-items: center;
 }
 
-.header__menu span {
+.header__menu a span {
   padding: 10px 0;
+}
 
+.header__menu a {
+  text-decoration: none;
+  color: $primary-color;
 }
 
 .header__menu span:hover {
@@ -71,7 +73,7 @@ $primary-color: #ececef;
 .header__logo {
   background-image: url('../../assets/pngegg.png');
   width: 100px;
-  height: 58px;
+  height: 40px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

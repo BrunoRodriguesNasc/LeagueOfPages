@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../button/Button';
 import './image.scss';
 
-function Image() {
+function HeaderHome() {
   return (
     <>
       <div className='image__header'>
@@ -23,4 +23,4 @@ function Image() {
   );
 }
 
-export default Image;
+export default HeaderHome;

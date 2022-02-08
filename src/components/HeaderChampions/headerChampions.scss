@@ -1,0 +1,51 @@
+.header__champions {
+    box-sizing: border-box;
+    width: 100%;
+    height: 700px;
+    background-image: url('../../assets/champiosSelectImage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: none;
+    background-position: center center;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header__champions::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    z-index: 1;
+    background-color: rgba(27,26,26, 0.7);
+}
+
+.header__champions__header {
+    color: #ececef;
+    position: absolute;
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.header__champions__header > p:first-child{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.header__champions__header span {
+    font-size: calc(58.73px + 2.88vw);
+}
+
+.header__champions__header > p:last-child {
+    font-size: 0.875rem;
+    font-weight: 400;
+    width: 600px;
+    text-align: center;
+    overflow-wrap: break-word;
+    padding: 0 15px;
+}

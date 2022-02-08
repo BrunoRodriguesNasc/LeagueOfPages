@@ -1,4 +1,4 @@
-export const itensMenu = [<span>Home</span>, <span>Accounts</span>, <span>About</span>, <span>Feedback</span>, <span>News</span>];
+export const itensMenu = [<span>Home</span>, <span>Accounts</span>, <span>Champions</span>];
 export const champions = [
     {
         name: 'Irelia',
