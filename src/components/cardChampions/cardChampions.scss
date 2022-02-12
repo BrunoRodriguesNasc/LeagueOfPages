@@ -1,0 +1,62 @@
+.card__champions {
+    width: 290px;
+    height: 310px;
+    margin: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__champions::after {
+    content: '';
+    background-color: #d7d7d7;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(60%,-30px) rotate(42deg);
+    transition: 0.5s ease all;
+}
+
+.card__champions:hover::after {
+    content: '';
+    background-color: #d7d7d7;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: left;
+    transform: translate(120%,-30px) rotate(42deg);
+    transition: 0.5s ease all;
+}
+
+.card__champions__name {
+    height: 50px;
+    width: 500px;
+    margin-left: -50px;
+    bottom: 0;
+    background-color: rgb(6, 28, 37);
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding-left: 60px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-style: italic;
+    position: absolute;
+    transition: 0.8s ease all;
+}
+
+.card__champions__image:hover {
+    transform: scale(1.1);
+    transition: 0.5s ;
+}
+
+.card__champions:hover .card__champions__name{
+    transition: 0.8s ease all;
+    transform: translate(40px,0);
+    background-color: rgb(12, 82, 110);
+}

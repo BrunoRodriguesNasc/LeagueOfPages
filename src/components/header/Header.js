@@ -5,7 +5,6 @@ import {
   } from "react-router-dom";
 
 const Header = ({ menu, blog }) => {
-    console.log(menu[0].props)
     return (
         <>
         <nav className='header'>
@@ -14,7 +13,7 @@ const Header = ({ menu, blog }) => {
             
             <div className='header__menu'>
             {menu.map(item => {
-               return <Link to={`${item.props.children === 'Home' ? '/' : `/${item.props.children}`}`}>{item}</Link>
+               return <Link key={item.props.children} to={`${item.props.children === 'Home' ? '/' : `/${item.props.children}`}`}>{item}</Link>
             })}
             </div>
             <div>
