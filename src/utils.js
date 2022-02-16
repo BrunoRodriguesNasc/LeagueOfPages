@@ -50,4 +50,26 @@ export const roles = [
     }
 ]
 
+
+export const typeChampion = {
+    Assassin :
+    {
+        image:'../Assassin.png'
+    },
+    Fighter : 
+    {
+        image:'../Fighter.png'
+    },
+    Mage : {
+        image:'../Mage.png'
+    },
+    Marksman : {
+        image:'../Marksman.png'
+    },
+    Tank : {
+        image:'../Tank.png'
+    },
+}
+
+
 export  const arrayChampionsCenter = ['Akshan','Alistar','Akali','Aurelion Sol','Aphelios','Anivia','Bard', 'Darius','Dr. Mundo','Galio','Gwen','Gragas','Evelynn','Ivern','Irelia','Kayn','Lillia','Malzahar','Mordekaiser','Neeko','Ornn','Pantheon','Pyke','Qiyana','Rakan','Rell','Samira','Sett','Senna','Seraphine','Sylas','Twitch','Varus','Yone','Yuumi','Zilean','Zoe','Xayah','Zeri','Xerath','Xin Zhao', "Vel'Koz","Kai'Sa"];
