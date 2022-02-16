@@ -8,6 +8,7 @@ import {
   Routes
 } from "react-router-dom";
 import './app.scss';
+import InfoChampions from './components/InfoChampions/InfoChampions';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/Champions" element={<ChampionsPage/>} />
+          <Route path="/Champions/:champion" element={<InfoChampions/>} />
         </Routes>
       </Router>
     </div>

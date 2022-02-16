@@ -8,7 +8,7 @@ const Champions = () => {
     <div className='champions'>
       <h1>Choose Your <span>Champion</span></h1>
       <div className='champions__container'>
-       {champions.map(({name,image,detail}) => <BoxChampions image={image} name={name} detail={detail}/>)}
+       {champions.map(({name,image,detail}) => <BoxChampions key={name} image={image} name={name} detail={detail}/>)}
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const Roles = () => {
     <div className='roles__information'>
     <h1>Choose Your <span>Role</span></h1>
     <div className='role__container'>
-      {roles.map(({name, detail, image }) =>  <BoxRoles image={image} detail={detail} name={name}/>)}
+      {roles.map(({name, detail, image }) =>  <BoxRoles key={name} image={image} detail={detail} name={name}/>)}
     </div>
     </div>
   </div>;

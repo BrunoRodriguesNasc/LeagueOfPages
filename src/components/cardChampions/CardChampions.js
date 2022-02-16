@@ -1,5 +1,6 @@
 import React from 'react';
 import { arrayChampionsCenter } from '../../utils';
+import { Link } from 'react-router-dom';
 import './cardChampions.scss';
 
 const CardChampions = ({ image, name }) => {
@@ -14,13 +15,14 @@ const CardChampions = ({ image, name }) => {
     alignItems:'flex-end',
     backgroundPosition: arrayChampionsCenter.includes(name) ? '50%' : '100% 50%'
   }
-  console.log(name);
   return (
+    <Link to={`${name}`}>
     <div className='card__champions'>
       <div className='card__champions__image' style={styleImage}>
       </div>
       <div className='card__champions__name'>{name}</div>
     </div>
+    </Link>
   )
 }
 
