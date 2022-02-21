@@ -15,7 +15,7 @@ function HeaderHome() {
           color={'#ececef'}
           width={'150px'}
           height={'50px'}
-          bgColor={'#b43fb1'}
+          bgColor={'rgb(15 52 54)'}
           label={'Play now'}
         ></Button>
       </div>

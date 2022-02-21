@@ -1,0 +1,31 @@
+.container {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    padding: 0px 8% 0px 5%;
+    margin-bottom: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading {
+    background-color: rgb(8 215 247);
+    width: 30%;
+    height: 10px;
+    position: relative;
+    padding-right: 5%;
+    background-clip: content-box;
+    transform: skewX(-40deg);
+}
+
+.loading-low-opacity {
+    background-color: rgb(8 215 247);
+    width: 30%;
+    height: 10px;
+    position: relative;
+    opacity: 0.2;
+    padding-right: 5%;
+    background-clip: content-box;
+    transform: skewX(-40deg);
+}

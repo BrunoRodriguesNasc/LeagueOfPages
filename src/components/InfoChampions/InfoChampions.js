@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { getChampionByName } from '../../api/apiService';
 import { typeChampion } from '../../utils';
+import Rating from '../rating/Rating';
 import './infoChampion.scss';
 // import '../../assets'
 const InfoChampions = () => {
@@ -45,18 +46,18 @@ const InfoChampions = () => {
                         <div className='info__champion__role'>
                             <div className='info__role'>
                                 <div className="image__champion__type" style={{ backgroundImage: `url('${typeChampion[championData.tags[0]].image}')` }} />
-                                <span>Function</span>
+                                <span style={{marginBottom:'10px'}}>Function</span>
                                 <span style={{color:'#7a673e'}}>{championData.tags[0]}</span>
                             </div>
                             <div className='info__role'>
-                                <div className="image__champion__type" style={{ backgroundImage: `url('${typeChampion[championData.tags[0]].image}')` }} />
-                                <span>Dificuldade</span>
-                                <span style={{color:'#7a673e'}}>{championData.info.difficulty}</span>
+                                <Rating difficulty={championData.info.difficulty}/>
+                                <span style={{marginBottom:'10px'}}>Difficulty</span>
+                                <span style={{color:'#7a673e'}}>{championData.info.difficulty === 10 ? 'High' : championData.info.difficulty < 5 ? 'Low' : 'Moderate'}</span>
                             </div>
                         </div>
                         <span className='line'></span>
                         <div className='info__champion__lore'>
-                            {championData.lore}
+                            <span className='lore'>{championData.lore}</span>
                         </div>
 
                     </div>
