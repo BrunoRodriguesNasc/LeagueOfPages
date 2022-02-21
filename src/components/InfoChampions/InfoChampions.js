@@ -52,7 +52,7 @@ const InfoChampions = () => {
                             <div className='info__role'>
                                 <Rating difficulty={championData.info.difficulty}/>
                                 <span style={{marginBottom:'10px'}}>Difficulty</span>
-                                <span style={{color:'#7a673e'}}>{championData.info.difficulty === 10 ? 'High' : championData.info.difficulty < 5 ? 'Low' : 'Moderate'}</span>
+                                <span style={{color:'#7a673e'}}>{championData.info.difficulty === 10 ? 'High' : championData.info.difficulty > 3 ? 'Moderate' : 'Low'}</span>
                             </div>
                         </div>
                         <span className='line'></span>
