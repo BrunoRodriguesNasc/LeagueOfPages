@@ -62,7 +62,7 @@ function Skills({ champion }) {
                         {indexSkill === 0 ? champion.passive.name : champion.spells[indexSkill - 1].name}
                     </h2>
                     <span className="info__hability">
-                    {indexSkill === 0 ? champion.passive.description : parse(champion.spells[indexSkill - 1].description)}
+                    {indexSkill === 0 ? parse(champion.passive.description) : parse(champion.spells[indexSkill - 1].description)}
                     </span>
                 </div>
             </div>
