@@ -3,7 +3,7 @@ import { arrayChampionsCenter } from '../../utils';
 import { Link } from 'react-router-dom';
 import './cardChampions.scss';
 
-const CardChampions = ({ image, name }) => {
+const CardChampions = ({ id, image, name }) => {
 
   const styleImage = {
     backgroundImage: `url(${image})`,
@@ -16,7 +16,7 @@ const CardChampions = ({ image, name }) => {
     backgroundPosition: arrayChampionsCenter.includes(name) ? '50%' : '100% 50%'
   }
   return (
-    <Link to={`${name}`}>
+    <Link to={`${id}`}>
     <div className='card__champions'>
       <div className='card__champions__image' style={styleImage}>
       </div>

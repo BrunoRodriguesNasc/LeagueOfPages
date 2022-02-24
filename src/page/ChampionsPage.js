@@ -20,7 +20,7 @@ const ChampionsPage = () => {
     <HeaderChampions/>
     <ContainerChampions>
       {champions && champions.map((champion) => {
-            return <CardChampions key={champion.name} name={champion.name} image={champion.splash}/>;
+            return <CardChampions key={champion.name} id={champion.id} name={champion.name} image={champion.splash}/>;
         })}
     </ContainerChampions>
   </>

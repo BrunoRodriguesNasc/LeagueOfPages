@@ -1,6 +1,7 @@
 import Home from './page/Home'; 
 import Header from './components/header/Header';
 import ChampionsPage from './page/ChampionsPage';
+import InfoChampions from './components/InfoChampions/InfoChampions';
 import { itensMenu } from './utils';
 import {
   BrowserRouter as Router,
@@ -8,7 +9,6 @@ import {
   Routes
 } from "react-router-dom";
 import './app.scss';
-import InfoChampions from './components/InfoChampions/InfoChampions';
 
 function App() {
   return (
