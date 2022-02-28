@@ -4,9 +4,9 @@ import { getChampionByName } from '../../api/apiService';
 import { typeChampion } from '../../utils';
 import Skills from '../containerHability/Skills';
 import Rating from '../rating/Rating';
+import Skins from '../skins/Skins';
 
 import './infoChampion.scss';
-// import '../../assets'
 const InfoChampions = () => {
     const [championData, setChampionData] = useState(false);
 
@@ -62,9 +62,12 @@ const InfoChampions = () => {
                     </div>
                 </div>
             </div>
-            <div className='section_hability'>
-                <h2 className='section_hability_title'>Skills</h2>
+            <div className='container_hability'>
+                <h2 className='container_hability_title'>Skills</h2>
                 <Skills champion={championData}/>
+            </div>
+            <div className='container__skins'>  
+                <Skins id={championData.id} name={championData.name} skins={championData.skins}/>
             </div>
         </>
 

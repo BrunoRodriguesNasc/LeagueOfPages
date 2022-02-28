@@ -14,8 +14,6 @@ function Skills({ champion }) {
         4 : '89.3%',
     }
 
-    console.log(champion);
-
     return (
         <section className="container__skill">
             <div className="container__button">
@@ -35,7 +33,7 @@ function Skills({ champion }) {
              </button>
                 {champion.spells.map((value, index) => {
                     return (
-                        <button className="button__skill" key={index} onClick={() => setIndexSkill(index + 1)}>
+                        <button className={`button__skill`} key={index} onClick={() => setIndexSkill(index + 1)}>
                             <span className="image__span">
                                 <span>
                                     <span className="border__image" style={{opacity : `${indexSkill === (index + 1) ? 1 : 0}`}}> </span>
@@ -57,11 +55,11 @@ function Skills({ champion }) {
                 </span>
             </div>
             <div style={{height:'200px'}}>
-                <div className='hability'>
+                <div className={`hability`}>
                     <h2 className="title__hability">
                         {indexSkill === 0 ? champion.passive.name : champion.spells[indexSkill - 1].name}
                     </h2>
-                    <span className="info__hability">
+                    <span className={`info__hability opacity-${indexSkill - 1}`}>
                     {indexSkill === 0 ? parse(champion.passive.description) : parse(champion.spells[indexSkill - 1].description)}
                     </span>
                 </div>

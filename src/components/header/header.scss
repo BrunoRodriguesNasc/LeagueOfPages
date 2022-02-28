@@ -4,43 +4,16 @@ $primary-color: #ececef;
     background-color: #242625;
     width: 100%;
     height: 80px;
-    position: relative;
+    position: sticky;
     box-shadow: 0 15px 15px rgba(0,0,0, 0.2);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 2rem;
     color: $primary-color;
     font-weight: 700;
-}
-
-.header::after, .header::before {
-    z-index: -1;
-    position: absolute;
-    content: '';
-    bottom: 15px;
-    left: 10px;
-    width: 50%;
-    top: 80%;
-    max-width: 300px;
-    background-color: #777;
-    -moz-box-shadow: 15px 1px 15px 15px rgba(0,0,0, 0.2);
-    box-shadow: 15px 1px 15px 15px rgba(0,0,0, 0.2);
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-}
-
-.header:after {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
+    top:0;
+    z-index: 999;
 }
 
 .header__menu {

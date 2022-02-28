@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header menu={itensMenu} blog={'LOL'} />
+        <Header menu={itensMenu} blog={''} />
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/Champions" element={<ChampionsPage/>} />

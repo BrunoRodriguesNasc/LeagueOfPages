@@ -11,13 +11,6 @@ function HeaderHome() {
         <span className='image__header__message__play'>Play</span>
         <span className='image__header__message__game'>League of Legends</span>
         <span className='image__header__message__line'></span>
-        <Button
-          color={'#ececef'}
-          width={'150px'}
-          height={'50px'}
-          bgColor={'rgb(15 52 54)'}
-          label={'Play now'}
-        ></Button>
       </div>
     </>
   );
