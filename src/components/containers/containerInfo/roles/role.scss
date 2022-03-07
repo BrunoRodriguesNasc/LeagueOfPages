@@ -1,0 +1,84 @@
+.roles {
+    position: relative;
+    background-color: #0d0d0d;
+    height: 800px;
+    display: flex;  
+}
+
+.roles__background {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background: url('../../../assets/summoner-rift.jpg') center no-repeat;
+    background-size: contain;
+}
+
+.roles__background::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle,transparent , #0d0d0d 40%);
+}
+
+.roles__information {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roles__information h1 {
+    color: #ececef;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+}
+
+.roles__information h1 span {
+    color: #08ecf7;
+}
+
+.boxRoles {
+    width: 300px;
+    height: 100%;
+}
+
+.role__container {
+    padding: 0 5rem;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.boxRoles__detail {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 260px;
+    background-color: rgba(36, 36, 36, 0.5);
+}
+
+.boxRoles__name {
+    color: rgb(28 179 178);
+    font-weight: 700;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.boxRoles__information {
+    color: #ececef;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.boxRoles__image {
+    cursor: pointer;
+}
+
+.boxRoles__image:hover {
+    transform: scale(2);
+}
