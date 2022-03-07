@@ -1,5 +1,5 @@
 import React from 'react';
-import { arrayChampionsCenter } from '../../utils';
+import { arrayChampionsCenter } from '../../../utils';
 import { Link } from 'react-router-dom';
 import './cardChampions.scss';
 

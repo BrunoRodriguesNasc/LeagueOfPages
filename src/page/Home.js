@@ -1,5 +1,5 @@
 import React from 'react';
-import ContainerInfo from '../components/containerInfo/ContainerInfo';
+import ContainerInfo from '../components/containers/containerInfo/ContainerInfo';
 import HeaderHome from '../components/HeaderHome/HeaderHome';
 const Home = () => {
     return (

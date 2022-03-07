@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { getChampionByName } from '../../api/apiService';
 import { typeChampion } from '../../utils';
-import Skills from '../containerHability/Skills';
-import Rating from '../rating/Rating';
-import Skins from '../skins/Skins';
+import Skills from './containerHability/Skills';
+import Rating from './rating/Rating';
+import Skins from './skins/Skins';
 
 import './infoChampion.scss';
 const InfoChampions = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { roles } from '../../../utils'
+import { roles } from '../../../../utils'
 import BoxRoles from './BoxRoles';
 import './role.scss';
 

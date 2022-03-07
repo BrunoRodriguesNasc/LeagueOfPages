@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { getChampion } from '../api/apiService';
-import CardChampions from '../components/cardChampions/CardChampions';
-import HeaderChampions from '../components/HeaderChampions/HeaderChampions';
-import ContainerChampions from '../components/containerChampions/containerChampions';
+import CardChampions from '../components/Champions/cardChampions/CardChampions';
+import HeaderChampions from '../components/Champions/HeaderChampions/HeaderChampions';
+import ContainerChampions from '../components/Champions/containerChampions/containerChampions';
 
 const ChampionsPage = () => {
   const [champions, setChampions ] = useState([]);
