@@ -5,8 +5,8 @@ import { typeChampion } from '../../utils';
 import Skills from './containerHability/Skills';
 import Rating from './rating/Rating';
 import Skins from './skins/Skins';
-
 import './infoChampion.scss';
+
 const InfoChampions = () => {
     const [championData, setChampionData] = useState(false);
 
@@ -69,6 +69,7 @@ const InfoChampions = () => {
             <div className='container__skins'>  
                 <Skins id={championData.id} name={championData.name} skins={championData.skins}/>
             </div>
+            <footer className="footer">Bruno Rodrigues do Nascimento</footer>
         </>
 
     )

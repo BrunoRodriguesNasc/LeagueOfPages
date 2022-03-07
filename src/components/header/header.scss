@@ -25,6 +25,7 @@ $primary-color: #ececef;
   font-weight: 700;
   height: 60px;
   align-items: center;
+  position: absolute;
 }
 
 .header__menu a span {
@@ -50,4 +51,6 @@ $primary-color: #ececef;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  position: absolute;
+  left: 0;
 }
