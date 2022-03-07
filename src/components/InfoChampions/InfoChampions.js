@@ -44,14 +44,14 @@ const InfoChampions = () => {
                     <div className='info__champion__container'>
                         <div className='info__champion__role'>
                             <div className='info__role'>
-                                <div className="image__champion__type" style={{ backgroundImage: `url('${typeChampion[championData.tags[0]].image}')` }} />
+                                <div className="image__champion__type" style={{ backgroundImage: `url('${typeChampion[championData.tags[0]]?.image}')` }} />
                                 <span style={{marginBottom:'10px'}}>Function</span>
                                 <span style={{color:'#7a673e'}}>{championData.tags[0]}</span>
                             </div>
                             <div className='info__role'>
                                 <Rating difficulty={championData.info.difficulty}/>
                                 <span style={{marginBottom:'10px'}}>Difficulty</span>
-                                <span style={{color:'#7a673e'}}>{championData.info.difficulty === 10 ? 'High' : championData.info.difficulty > 3 ? 'Moderate' : 'Low'}</span>
+                                <span style={{color:'#7a673e'}}>{championData.info.difficulty > 8 ? 'High' : championData.info.difficulty > 3 ? 'Moderate' : 'Low'}</span>
                             </div>
                         </div>
                         <span className='line'></span>
