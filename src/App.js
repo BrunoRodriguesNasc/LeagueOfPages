@@ -1,5 +1,5 @@
 import Home from './page/Home'; 
-import Header from './components/header/Header';
+import Header from './components/headers/Header/Header';
 import ChampionsPage from './page/ChampionsPage';
 import InfoChampions from './components/InfoChampions/InfoChampions';
 import { itensMenu } from './utils';
@@ -9,6 +9,7 @@ import {
   Routes
 } from "react-router-dom";
 import './app.scss';
+import Accounts from './page/Accounts';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/Champions" element={<ChampionsPage/>} />
           <Route path="/Champions/:champion" element={<InfoChampions/>} />
+          <Route path="/Accounts" element={<Accounts/>}/>
         </Routes>
       </Router>
     </div>

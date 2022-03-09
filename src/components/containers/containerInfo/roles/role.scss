@@ -82,3 +82,28 @@
 .boxRoles__image:hover {
     transform: scale(2);
 }
+
+
+@media only screen and (max-width: 450px) {
+    .roles {
+        height: 2500px;
+    }
+    
+    .role__container {
+        flex-direction: column;
+        height: 2300px;
+    }
+    
+    .roles__information {
+        height: 95%;
+    }
+
+    .roles__information h1 {
+        letter-spacing: 0.3rem;
+        
+    }
+
+    .roles__background {
+        background: none;
+    }
+}

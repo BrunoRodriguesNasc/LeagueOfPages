@@ -9,6 +9,10 @@
     color: #ececef;
     font-weight: 500;
     letter-spacing: 0.5rem;
+    top: -10px;
+    position: relative;
+    z-index: 1;
+    background: #0d0d0d;
 }
 
 .champions h1 span {
@@ -98,5 +102,12 @@
     }
     from {
         opacity: 0;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .champions {
+        border-bottom: 1px solid
     }
 }

@@ -13,6 +13,7 @@ $primary-color: #ececef;
     justify-content: center;
     align-items: center;
     z-index: -1;
+    
 
 }
 .image__header::after {
@@ -33,6 +34,7 @@ $primary-color: #ececef;
     flex-direction: column;
     align-items: center;
     width: max-content;
+    font-size: 2rem;
 }
 
 .image__header__message__play {
@@ -70,3 +72,37 @@ $primary-color: #ececef;
       text-shadow: 0 0 20px #fff, 0 0 30px #d8d2d5, 0 0 40px #612b68, 0 0 50px #612b68, 0 0 60px #612b68, 0 0 70px #612b68, 0 0 80px #612b68;
     }
   }
+
+
+@media only screen and (max-width: 450px)  {
+    .image__header {
+        height: 30vh;
+    }
+
+    .image__header__message {
+        top:20%;
+    }
+
+    .image__header__message__play {
+        font-size: 24px;
+    }
+    
+    .image__header__message__game {
+        font-size: 32px;
+        letter-spacing: 0.2rem;
+    }
+
+    .image__header__message__line {
+        width: 250px;
+    }
+    
+    .champions__container {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .boxChampions {
+        width: 350px;
+    }
+}
