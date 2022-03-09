@@ -7,7 +7,7 @@ $primary-color: #ececef;
     position: sticky;
     box-shadow: 0 15px 15px rgba(0,0,0, 0.2);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 0 2rem;
     color: $primary-color;
@@ -50,4 +50,18 @@ $primary-color: #ececef;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  position: absolute;
+  left: 0;
+}
+
+
+@media only screen and (max-width: 450px) {
+
+  .header__menu a span {
+    font-size: 12px;
+  }
+
+  .header__logo {
+    width: 30px;
+  }
 }

@@ -110,4 +110,14 @@
     .champions {
         border-bottom: 1px solid
     }
+
+    .boxChampions {
+        width: 300px;
+    }
+
+    .champions__container {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
 }

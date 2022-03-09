@@ -88,7 +88,7 @@ $primary-color: #ececef;
     }
     
     .image__header__message__game {
-        font-size: 32px;
+        font-size: 28px;
         letter-spacing: 0.2rem;
     }
 
@@ -96,13 +96,9 @@ $primary-color: #ececef;
         width: 250px;
     }
     
-    .champions__container {
-        flex-direction: column;
-        padding: 0;
-        align-items: center;
-    }
 
-    .boxChampions {
-        width: 350px;
+
+    .image__header__message__game {
+        animation: none;
     }
 }
