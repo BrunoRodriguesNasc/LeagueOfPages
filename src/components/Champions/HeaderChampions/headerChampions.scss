@@ -51,3 +51,21 @@
     padding: 0 15px;
     letter-spacing: 1px;
 }
+
+@media only screen and (max-width: 450px) {
+    .header__champions__header > p:last-child {
+       width: 100%;
+    }
+    .header__champions__header span {
+        font-size: calc(58.73px + -1.12vw);
+    }
+
+    .header__champions::after {
+        height: 100%;
+    }
+
+    .header__champions {
+        height: 50vh;
+    }
+    
+}

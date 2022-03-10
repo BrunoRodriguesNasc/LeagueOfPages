@@ -17,6 +17,7 @@ const InfoChampions = () => {
             const data = await getChampionByName(champion);
             setChampionData(data[champion]);
         }
+        document.title = champion;
         fetchData();
     }, [champion]);
 
